@@ -1,6 +1,7 @@
 function check(){
     console.log('working');
 
+//checking correct answer
 var question1=document.quiz.question1.value;
 var question2=document.quiz.question2.value;
 var question3=document.quiz.question3.value;
@@ -17,6 +18,7 @@ if(question3 == "Wellington"){
     correct++;
 }
 
+//message arrays depend on correct answers
 var messages=['You really need to study more:)','Good job!','That is perfect!'];
 
 var range;
@@ -31,6 +33,7 @@ if (correct>0 && correct<3){
 if (correct>2){
     range=2;
 }
+
 
 document.getElementById("submitted").style.visibility='visible';
 
