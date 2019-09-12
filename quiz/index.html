@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capital Quiz</title>
+
+    <link rel="stylesheet" type="text/css" href="Assets/style/style.css">
+</head>
+
+<body>
+    <h1>CAPITAL QUIZ</h1>
+   
+    <!-- question list -->
+    <form id="quiz" name="quiz">
+    <p>Question #1.The Capital of the US?</p>
+        <input type="radio" name="question1" value="New York">New York <br>
+        <input type="radio" name="question1" value="Washington DC">Washington DC <br>
+
+    <br>
+    <br>
+
+    <p>Question #2.The Capital of India?</p>
+    
+        <input type="radio" name="question2" value="New Delhi">New Delhi <br>
+        <input type="radio" name="question2" value="Mumbai">Mumbai <br>
+        
+    <br>
+    <br>
+
+    <p>Question #3.The Capital of New Zealand?</p>
+    
+        <input type="radio" name="question3" value="Auckland">Auckland <br>
+        <input type="radio" name="question3" value="Wellington">Wellington <br>
+        
+    <br>
+    <br>
+        
+        <input id="button" type="button"  value="SUBMIT" onclick="check();">
+    </form>
+
+    <div id="submitted">
+        <p id="number_correct"></p>
+        <p id="message"></p>
+    </div>
+
+
+    <script type="text/javascript" src="Assets/script/script.js"></script>
+</body>
+
+</html>

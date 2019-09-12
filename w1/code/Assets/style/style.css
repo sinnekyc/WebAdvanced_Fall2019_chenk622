@@ -1,0 +1,24 @@
+.container{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.boxes{
+    width: calc(100%/3);
+    height: 20vw;
+    /* background-color: rgb(73, 23, 114); */
+    float: left;
+}
+
+#box1{
+    background-color: rgb(127, 174, 228);
+}
+
+#box2{
+    background-color: rgb(243, 93, 168);
+}
+
+#box3{
+    background-color: rgb(184, 245, 177);
+}
