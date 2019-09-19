@@ -1,0 +1,159 @@
+
+body{
+    font-family: 'Gayathri', sans-serif;
+    background-color: greenyellow;
+    font-weight: 500;
+	font-size: 1em;
+}
+
+body, a{
+    margin: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+/* fixed header */
+header{
+    position:fixed;
+    z-index: 10;
+    background-color:transparent;
+    top: 0;
+	right: 0;
+    width:100%;
+    height: 10vh;
+}
+
+/* navigator */
+#logo{
+    text-align: center;
+    float: left;
+    left: 20px;
+    padding: 12px 20px;
+}
+
+.aboutme{
+    text-align: center;
+    float: right;
+    margin: 10px;
+    padding: 12px 20px;
+    border: 1px solid white;
+}
+
+/* container */
+section {
+    position: relative;
+    top:8vh;
+}
+
+/* homepage */
+
+#name{
+    position: absolute;
+	width: 80vw;
+	left: 0;
+	right: 0;
+    margin: 0 auto;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 10%;
+}
+
+/* how could I put the text on the center? */
+#profile{
+    position: absolute;
+    width: 80vw;
+	left: 0;
+	right: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20%;
+    padding-left: 1%;
+}
+
+.homepage{
+    background-color: beige;
+    margin: 0;
+    width:100%;
+    height:100vh;
+}
+
+/* portfolio */
+.portfolio{
+    background-color: cyan;
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    margin: 0 auto;
+    width:100vw;
+    height:auto;
+    text-align: center;
+}
+
+/* portfolio nav */
+#portfolio-sort{
+    text-align: center;
+    padding-bottom: 3px;
+    border-bottom: 1px solid palevioletred;
+    margin-bottom: 1em;
+}
+
+#portfolio-sort a{
+    color:rgb(15, 97, 52);
+    display: inline-block;
+    padding: 3px 9px;
+    margin-right: 1em;
+}
+
+/* gallery // how can I move those items to center? */
+section .items{
+    width: 80vw;
+	height: 80vw;
+	float: left;
+	text-align: center
+}
+
+/* use the example in class */
+#item1 {background: #37BC9B;}
+#item2 {background: #DA4453;}
+#item3 {background: #F6BB42;}
+#item4 {background: #3BAFDA;}
+#item5 {background: #4A89DC;}
+#item6 {background: #E9573F;}
+#item7 {background: #434A54;}
+#item8 {background: #D770AD;}
+
+/* media queries */
+@media screen and (min-width:500px) and (min-device-width:500px){
+    body{
+        background-color: yellow;
+    }
+    section .items{
+        width:calc(80vw/2);
+        height:calc(80vw/2);
+    }
+}
+
+/* tablet */
+@media screen and (min-width:780px) and (min-device-width:500px){
+    body{
+        background-color:orangered;
+    }
+    section .items{
+        width:calc(80vw/3);
+        height:calc(80vw/3);
+    }
+}
+
+/* desktop */
+@media screen and (min-width:1050px){
+    body{
+        background-color:plum;
+    }
+    section .items{
+        width:calc(80vw/4);
+        height:calc(80vw/4);
+    }
+}
+
