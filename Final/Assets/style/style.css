@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 
 body{
     font-family: 'Gayathri', sans-serif;
@@ -25,6 +30,16 @@ header{
     height: 10vh;
 }
 
+footer{
+    position: relative;
+    clear: both;
+    z-index:10;
+    background-color:coral;
+    margin-top: 10%;
+    width:100%;
+    height:15vh;
+}
+
 /* navigator */
 #logo{
     text-align: center;
@@ -41,6 +56,40 @@ header{
     border: 1px solid white;
 }
 
+/* from in class code example, not working?? */ 
+#myIntro{
+    width: 0;
+    height: 80vh;
+    z-index: 100;
+    background-color: black;
+    opacity: 0.8;
+    display: block;
+    position: fixed;
+    text-align: center;
+    /* transition: left 1s; */
+    overflow-x: hidden;
+}
+
+#myIntro.openMe{
+    margin: 10%;
+    width: 80vw;
+}
+
+#closeIcon{
+    position: absolute;
+    right: 15px;
+    font-size: 50px;
+	margin-left: 30px;
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-family: Arial;
+	}
+
+
+
+	
+
 /* container */
 section {
     position: relative;
@@ -52,30 +101,28 @@ section {
 #name{
     position: absolute;
 	width: 80vw;
-	left: 0;
-	right: 0;
-    margin: 0 auto;
+	margin-left: 10vw;
+    margin-right: 10vw;
     font-weight: 900;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 20vh;
+    font-size: 4em;
 }
 
 /* how could I put the text on the center? */
 #profile{
     position: absolute;
     width: 80vw;
-	left: 0;
-	right: 0;
-    margin: 0 auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
     text-align: center;
-    padding-top: 20%;
-    padding-left: 1%;
+    padding-top: 45vh;
 }
 
 .homepage{
     background-color: beige;
-    margin: 0;
-    width:100%;
+    margin: 0 auto;
+    widows: 100vw;
     height:100vh;
 }
 
@@ -89,6 +136,7 @@ section {
     width:100vw;
     height:auto;
     text-align: center;
+    z-index: 5;
 }
 
 /* portfolio nav */
@@ -103,16 +151,25 @@ section {
     color:rgb(15, 97, 52);
     display: inline-block;
     padding: 3px 9px;
-    margin-right: 1em;
+    /* margin-right: 1em; */
 }
 
 /* gallery // how can I move those items to center? */
 section .items{
-    width: 80vw;
-	height: 80vw;
+    width: 100vw;
+    height: 80vw;
+    margin: 1%;
 	float: left;
 	text-align: center
 }
+
+/* left and right has certain space, squeeze the container to the center */
+.items-container{
+    margin-left: 10vw;
+    margin-right: 10vw; 
+}
+
+
 
 /* use the example in class */
 #item1 {background: #37BC9B;}
@@ -130,30 +187,33 @@ section .items{
         background-color: yellow;
     }
     section .items{
-        width:calc(80vw/2);
+        width:calc(100vw/2);
         height:calc(80vw/2);
     }
 }
 
 /* tablet */
-@media screen and (min-width:780px) and (min-device-width:500px){
+@media screen and (min-width:768px) and (min-device-width:500px){
     body{
         background-color:orangered;
     }
     section .items{
-        width:calc(80vw/3);
-        height:calc(80vw/3);
+        width:calc(100vw/2);
+        height:calc(80vw/2);
+
     }
 }
 
 /* desktop */
-@media screen and (min-width:1050px){
+@media screen and (min-width:1024px){
     body{
         background-color:plum;
     }
     section .items{
-        width:calc(80vw/4);
-        height:calc(80vw/4);
+        width:calc(100vw/3);
+        height:calc(80vw/3);
+
     }
+  
 }
 

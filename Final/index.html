@@ -14,7 +14,13 @@
                     <a id="logo" href="index.html">
                         <img src="http://media.bizj.us/view/img/1191871/kclogo.png" height="40" width="40">
                     </a>
-                    <a class="aboutme" href="">About Me</a>
+
+                    <span class="aboutme" style="font-size: 15px; cursor: pointer;" onclick="openMe()">About Me</span>
+
+                    <div id="myIntro" class="introBlock">
+                    <span id="closeIcon" onclick = "closeMe()">&times;</span>
+                    </div>
+
             </nav>
         </header>
 
@@ -42,21 +48,35 @@
                         <a href="">Fun Stuff</a>
                     </div>
              </div>
-
+            
+             <!-- clear avoid float -->
              <div class="clear"></div>
-
-             <div id="item1" class="items">Item 1</div>
-			 <div id="item2" class="items">Item 2</div>
-			 <div id="item3" class="items">Item 3</div>
-			 <div id="item4" class="items">Item 4</div>
-			 <div id="item5" class="items">Item 5</div>
-			 <div id="item6" class="items">Item 6</div>
-			 <div id="item7" class="items">Item 7</div>
-			 <div id="item8" class="items">Item 8</div>
+             <div class="items-container">
+                <div id="item1" class="items">Item 1</div>
+                <div id="item2" class="items">Item 2</div>
+                <div id="item3" class="items">Item 3</div>
+                <div id="item4" class="items">Item 4</div>
+                <div id="item5" class="items">Item 5</div>
+                <div id="item6" class="items">Item 6</div>
+                <div id="item7" class="items">Item 7</div>
+                <div id="item8" class="items">Item 8</div>
+            </div>
         </section>
+
+        <br><br><br><br>
+        <footer></footer>
+
+        
+       
         
         <script type="text/javascript" src="assets/script/script.js"></script>
+        <script type="text/javascript" src="assets/script/jquery-3.4.1.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     </body>
+
+    
+      
 
 
 </html>
