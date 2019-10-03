@@ -8,7 +8,7 @@ body{
     font-family: 'Gayathri', sans-serif;
     background-color: greenyellow;
     font-weight: 500;
-	font-size: 1em;
+
 }
 
 body, a{
@@ -31,13 +31,14 @@ header{
 }
 
 footer{
-    position: relative;
+
     clear: both;
     z-index:10;
     background-color:coral;
-    margin-top: 10%;
+    margin-top: 200px;
     width:100%;
     height:15vh;
+
 }
 
 /* navigator */
@@ -56,10 +57,10 @@ footer{
     border: 1px solid white;
 }
 
-/* from in class code example, not working?? */ 
+
 #myIntro{
     width: 0;
-    height: 80vh;
+    height: 60vh;
     z-index: 100;
     background-color: black;
     opacity: 0.8;
@@ -97,7 +98,6 @@ section {
 }
 
 /* homepage */
-
 #name{
     position: absolute;
 	width: 80vw;
@@ -141,6 +141,7 @@ section {
 
 /* portfolio nav */
 #portfolio-sort{
+    
     text-align: center;
     padding-bottom: 3px;
     border-bottom: 1px solid palevioletred;
@@ -148,15 +149,16 @@ section {
 }
 
 #portfolio-sort a{
+    text-decoration: none;
     color:rgb(15, 97, 52);
     display: inline-block;
     padding: 3px 9px;
-    /* margin-right: 1em; */
+
 }
 
 /* gallery // how can I move those items to center? */
 section .items{
-    width: 100vw;
+    width: 98%;
     height: 80vw;
     margin: 1%;
 	float: left;
@@ -166,9 +168,15 @@ section .items{
 /* left and right has certain space, squeeze the container to the center */
 .items-container{
     margin-left: 10vw;
-    margin-right: 10vw; 
+    margin-right: 10vw;
+    width: 80vw;
+    height: auto; 
+  
 }
 
+#text{
+    color: #DA4453;
+}
 
 
 /* use the example in class */
@@ -181,8 +189,39 @@ section .items{
 #item7 {background: #434A54;}
 #item8 {background: #D770AD;}
 
+
 /* media queries */
-@media screen and (min-width:500px) and (min-device-width:500px){
+
+/* desktop
+alway do a desktop ver. first */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) { 
+    body{
+        background-color:plum;
+    }
+    /* because I have margin for the items, so I need to do math for the width */
+    section .items{
+        width:calc(94%/3);
+        height:calc(80vw/3);
+
+    }
+}
+
+
+/* tablet */
+@media screen and (min-device-width: 700px) and (max-device-width: 1199px) { 
+    body{
+        background-color:orangered;
+    }
+    section .items{
+        width:calc(96%/2);
+        height:calc(80vw/2);
+
+    }
+}
+
+/* phone */
+@media screen and (max-device-width: 699px) { 
     body{
         background-color: yellow;
     }
@@ -192,28 +231,6 @@ section .items{
     }
 }
 
-/* tablet */
-@media screen and (min-width:768px) and (min-device-width:500px){
-    body{
-        background-color:orangered;
-    }
-    section .items{
-        width:calc(100vw/2);
-        height:calc(80vw/2);
 
-    }
-}
 
-/* desktop */
-@media screen and (min-width:1024px){
-    body{
-        background-color:plum;
-    }
-    section .items{
-        width:calc(100vw/3);
-        height:calc(80vw/3);
-
-    }
-  
-}
 

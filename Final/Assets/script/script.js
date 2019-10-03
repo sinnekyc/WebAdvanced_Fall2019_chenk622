@@ -14,3 +14,16 @@ function closeMe(){
 }
 
 
+// storage data in JSON, call it out
+$.getJSON("../data.json", function(data){
+
+	console.log(data.method);
+
+	let myInfo = data.method;
+
+	for(let i in myInfo){
+		$(".json-container").append(myInfo[i].list + " "+ "Check my" + " " +  myInfo[i].link + " " + "!" +"<br>");
+
+	}
+
+})
