@@ -14,10 +14,11 @@ function closeMe(){
 }
 
 
+
 // storage data in JSON, call it out
 $.getJSON("../data.json", function(data){
 
-	console.log(data.method);
+	console.log(data);
 
 	let myInfo = data.method;
 
@@ -27,3 +28,4 @@ $.getJSON("../data.json", function(data){
 	}
 
 })
+
