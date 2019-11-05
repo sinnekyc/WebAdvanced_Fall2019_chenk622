@@ -1,6 +1,6 @@
 console.log("Final Project is Working");
 
-// from in class example. not working??
+//open about me
 var myIntro = document.getElementById("myIntro");
 
 function openMe(){
@@ -12,6 +12,7 @@ function closeMe(){
 	// mySideNav.style.width="0";
 	$("#myIntro").removeClass("openMe");
 }
+
 
 
 
