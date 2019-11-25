@@ -1,0 +1,13 @@
+h1{
+    clear: both;
+    font: bold;
+    font-size: 200%;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}

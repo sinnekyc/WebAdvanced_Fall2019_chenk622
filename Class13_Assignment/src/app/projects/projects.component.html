@@ -1,0 +1,21 @@
+<div *ngFor="let project of data">
+    <div class="Projects" (click) = 'myFunction'>
+        <h3>
+            {{ project.name }}
+        </h3>
+        <button (click) = 'showDialog()'>Description</button>
+        <button (click) = 'closeDialog()'>Close Description</button>
+
+    
+            <div  id="pj-description" class="hidden">
+                <p>{{ project.description }}</p>
+            </div>
+        
+        
+
+        <!-- <p *ngIf="project.description">
+            Description: {{ project.description }}
+        </p> -->
+    </div>
+
+</div>
